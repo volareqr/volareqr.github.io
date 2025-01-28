@@ -1,1556 +1,697 @@
-<div align="center">
-    <table border="0" cellspacing="0" cellpadding="0">
-        <tbody>
-            <tr height="50">
-                <td width="487" valign="top">
-                    <p align="center">
-                        <strong>Pizza</strong>
-                    </p>
-                </td>
-                <td width="68" valign="top">
-                    <p align="center">
-                        Mala
-                    </p>
-                </td>
-                <td width="69" valign="top">
-                    <p align="center">
-                        Velika
-                    </p>
-                </td>
-            </tr>
-            <tr height="100">
-                <td width="487" valign="top">
-                    <p align="center">
-                        1. <strong>Volare</strong>
-                    </p>
-                    <p align="center">
-                        Umak od rajčice, sir, n'duja, marinirane gljive,    luk
-                    </p>
-                </td>
-                <td width="68" valign="top">
-                    <p align="center">
-                        <strong>8,50€</strong>
-                    </p>
-                </td>
-                <td width="69" valign="top">
-                    <p align="center">
-                        <strong>9,50€</strong>
-                    </p>
-                </td>
-            </tr>
-            <tr height="100">
-                <td width="487" valign="top">
-                    <p align="center">
-                        2. <strong>Margharita</strong>
-                    </p>
-                    <p align="center">
-                        Umak od rajčice, sir, masline, maslinovo ulje,
-                        bosiljak, origano
-                    </p>
-                </td>
-                <td width="68" valign="top">
-                    <p align="center">
-                        <strong>6,50€</strong>
-                    </p>
-                </td>
-                <td width="69" valign="top">
-                    <p align="center">
-                        <strong>7,70€</strong>
-                    </p>
-                </td>
-            </tr>
-            <tr height="100">
-                <td width="487" valign="top">
-                    <p align="center">
-                        3. <strong>Calzone</strong>
-                    </p>
-                    <p align="center">
-                        Umak od rajčice, sir, šunka, gljive, origano
-                    </p>
-                </td>
-                <td width="68" valign="top">
-                    <p align="center">
-                        <strong>7,00€</strong>
-                    </p>
-                </td>
-                <td width="69" valign="top">
-                    <p align="center">
-                        <strong></strong>
-                    </p>
-                </td>
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Volare Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
 
-            </tr>
+        body {
+            background-color: white;
+            padding: 20px;
+        }
 
-            <tr height="100">
-                <td width="487" valign="top">
-                    <p align="center">
-                        4. <strong>Capricciosa</strong>
-                    </p>
-                    <p align="center">
-                        Umak od rajčice, sir, šunka, gljive, masline,    origano
-                    </p>
-                </td>
-                <td width="68" valign="top">
-                    <p align="center">
-                        <strong>7,00€</strong>
-                    </p>
-                </td>
-                <td width="69" valign="top">
-                    <p align="center">
-                        <strong>8.00€</strong>
-                    </p>
-                </td>
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #0077be;
+            color: white;
+            margin-bottom: 25px;
+            border-radius: 10px;
+        }
 
-            </tr>
+        .menu-section {
+            margin-bottom: 30px;
+        }
 
-            <tr height="100">
-                <td width="487" valign="top">
-                    <p align="center">
-                        5. <strong>Vesuvio</strong>
-                    </p>
-                    <p align="center">
-                        Umak od rajčice, sir, šunka, masline, origano
-                    </p>
-                </td>
-                <td width="68" valign="top">
-                    <p align="center">
-                        <strong>7,00€</strong>
-                    </p>
-                </td>
-                <td width="69" valign="top">
-                    <p align="center">
-                        <strong>8.00€</strong>
-                    </p>
-                </td>
+        .menu-header {
+            display: grid;
+            grid-template-columns: 3fr 1fr 1fr;
+            gap: 15px;
+            padding: 10px 0;
+            border-bottom: 2px solid #0077be;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
 
-            </tr>
+        .menu-row {
+            display: grid;
+            grid-template-columns: 3fr 1fr 1fr;
+            gap: 15px;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
 
-            <tr height="100">
-                <td width="487" valign="top">
-                    <p align="center">
-                        6. <strong>Funghi</strong>
-                    </p>
-                    <p align="center">
-                        Umak od rajčice, sir, gljive, masline, origano
-                    </p>
-                </td>
-                <td width="68" valign="top">
-                    <p align="center">
-                        <strong>7,00€</strong>
-                    </p>
-                </td>
-                <td width="69" valign="top">
-                    <p align="center">
-                        <strong>8,00€</strong>
-                    </p>
-                </td>
+        h2 {
+            color: #0077be;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: center;
+        }
 
-            </tr>
+        .price-header {
+            display: flex;
+            gap: 15px;
+            justify-content: flex-end;
+        }
 
-            <tr height="100">
-                <td width="487" valign="top">
-                    <p align="center">
-                        7. <strong>Kebab pizza</strong>
-                    </p>
-                    <p align="center">
-                        Umak od rajčice, sir, kebab meso, salata, blagi/ljuti
-                        umak
-                    </p>
-                </td>
-                <td width="68" valign="top">
-                    <p align="center">
-                        <strong>8,00€</strong>
-                    </p>
-                </td>
-                <td width="69" valign="top">
-                    <p align="center">
-                        <strong>9,00€</strong>
-                    </p>
-                </td>
+        .menu-item {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 15px;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
 
-            </tr>
+        .item-name {
+            font-weight: bold;
+            color: #333;
+        }
 
-            <tr height="100">
-                <td width="487" valign="top">
-                    <p align="center">
-                        8. <strong>Tuna</strong>
-                    </p>
-                    <p align="center">
-                        Umak od rajčice, sir, tuna, luk, origano
-                    </p>
-                </td>
-                <td width="68" valign="top">
-                    <p align="center">
-                        <strong>7,00€</strong>
-                    </p>
-                </td>
-                <td width="69" valign="top">
-                    <p align="center">
-                        <strong>8,00€</strong>
-                    </p>
-                </td>
+        .item-price {
+            color: #0077be;
+            font-weight: bold;
+            text-align: right;
+        }
 
-            </tr>
+        .item-description {
+            grid-column: 1 / -1;
+            color: #666;
+            font-size: 0.9em;
+        }
 
-            <tr height="100">
-                <td width="487" valign="top">
-                    <p align="center">
-                        9. <strong>Mortadella Rosso</strong>
-                    </p>
-                    <p align="center">
-                        Umak od rajčice, sir, marinirani cherry, rucola,
-                        mortadella, pesto rosso
-                    </p>
-                </td>
-                <td width="68" valign="top">
-                    <p align="center">
-                        <strong>8,50€</strong>
-                    </p>
-                </td>
-                <td width="69" valign="top">
-                    <p align="center">
-                        <strong>9,50€</strong>
-                    </p>
-                </td>
+        .allergy-warning {
+            background-color: #fff3f3;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #ff0000;
+        }
 
-            </tr>
+        @media (max-width: 768px) {
+            .menu-item {
+                grid-template-columns: 1fr;
+            }
+            
+            .item-price {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Pizzeria Volare</h1>
+        <p>www.pizzeria-volare.com</p>
+    </div>
 
-            <tr height="100">
-                <td width="487" valign="top">
-                    <p align="center">
-                        10. <strong>Mortadella Verde</strong>
-                    </p>
-                    <p align="center">
-                        Sir, bosiljak, mortadella, pesto pistaccio, mljeveni
-                        pistaccio,baby mozzarella
-                    </p>
-                </td>
-                <td width="68" valign="top">
-                    <p align="center">
-                        <strong>9,00€</strong>
-                    </p>
-                </td>
-                <td width="69" valign="top">
-                    <p align="center">
-                        <strong>10,00€</strong>
-                    </p>
-                </td>
+     <!-- Pizzas -->
+    <div class="menu-section">
+        <div class="menu-header">
+            <div>Pizza</div>
+            <div class="price">Mala</div>
+            <div class="price">Velika</div>
+        </div>
 
-            </tr>
+        <div class="menu-row">
+            <div>1. Volare</div>
+            <div class="price">8,50€</div>
+            <div class="price">9,50€</div>
+            <div class="item-description">Umak od rajčice, sir, n'duja, marinirane gljive, luk</div>
+        </div>
+        </div>
 
-            <tr height="100">
-                <td width="487" valign="top">
-                    <p align="center">
-                        11. <strong>Zucca</strong>
-                    </p>
-                    <p align="center">
-                        Bučino ulje, sir, dimljeni sir, buđola, mješane
-                        gljive
-                    </p>
-                </td>
-                <td width="68" valign="top">
-                    <p align="center">
-                        <strong>8,50€</strong>
-                    </p>
-                </td>
-                <td width="69" valign="top">
-                    <p align="center">
-                        <strong>9,50€</strong>
-                    </p>
-                </td>
+        <div class="menu-row">
+            <div>2. Margharita</div>
+            <div class="price">6,50€</div>
+            <div class="price">7,70€</div>
+            <div class="item-description">Umak od rajčice, sir, masline, maslinovo ulje, bosiljak, origano</div>
+        </div>
+        </div>
 
-            </tr>
+        <div class="menu-row">
+            <div>3. Calzone</div>
+            <div class="price">7,00€</div>
+            <div class="price">-</div>
+            <div class="item-description">Umak od rajčice, sir, šunka, gljive, origano</div>
+        </div>
+        </div>
+        
+        <div class="menu-row">
+            <div>4. Capricciosa</div>
+            <div class="price">7,00€</div>
+            <div class="price">8,00€</div>
+            <div class="item-description">Umak od rajčice, sir, šunka, gljive, masline, origano</div>
+        </div>
+        </div>
+        
+        <div class="menu-row">
+            <div>5. Vesuvio</div>
+            <div class="price">7,00€</div>
+            <div class="price">8,00€</div>
+            <div class="item-description">Umak od rajčice, sir, šunka, masline, origano</div>
+        </div>
+        </div>
+        <div class="menu-row">
+            <div>6. Funghi</div>
+            <div class="price">7,00€</div>
+            <div class="price">8,00€</div>
+            <div class="item-description">Umak od rajčice, sir, gljive, masline, origano</div>
+        </div>
+        </div>
+        <div class="menu-row">
+            <div>7. Kebab pizza</div>
+            <div class="price">8,00€</div>
+            <div class="price">9,00€</div>
+            <div class="item-description">Umak od rajčice, sir, kebab meso, salata, blagi/ljuti umak</div>
+        </div>
+        </div>
+        <div class="menu-row">
+            <div>8. Tuna</div>
+            <div class="price">7,00€</div>
+            <div class="price">8,00€</div>
+            <div class="item-description">Umak od rajčice, sir, tuna, luk, origano</div>
+        </div>
+        </div>
+        <div class="menu-row">
+            <div>9. Mortadella Rosso</div>
+            <div class="price">8,50€</div>
+            <div class="price">9,50€</div>
+            <div class="item-description">Umak od rajčice, sir, marinirani cherry, rucola, mortadella, pesto rosso</div>
+        </div>
+        </div>
+        <div class="menu-row">
+            <div>10. Mortadella Verde</div>
+            <div class="price">9,00€</div>
+            <div class="price">10,00€</div>
+            <div class="item-description">Sir, bosiljak, mortadella, pesto pistaccio, mljeveni pistaccio,baby mozzarella</div>
+        </div>
+        </div>
+        <div class="menu-row">
+            <div>11. Zucca</div>
+            <div class="price">8,50€</div>
+            <div class="price">9,50€</div>
+            <div class="item-description">Bučino ulje, sir, dimljeni sir, buđola, mješane gljive</div>
+        </div>
+        </div>
+        <div class="menu-row">
+            <div>12. Aceto</div>
+            <div class="price">8,50€</div>
+            <div class="price">9,50€</div>
+            <div class="item-description">Sir, češnjak, rukola, pršut, aceto crema,cherry</div>
+        </div>
+        </div>
+        <div class="menu-row">
+            <div>13. Picante</div>
+            <div class="price">8,00€</div>
+            <div class="price">9,00€</div>
+            <div class="item-description">Umak od rajčice, sir ,šunka, gljive, špek, feferoni, masline, origano</div>
+        </div>
+        </div>
+        <div class="menu-row">
+            <div>14. Quattro Formaggi</div>
+            <div class="price">8,00€</div>
+            <div class="price">9,00€</div>
+            <div class="item-description">Umak od rajčice, gouda, gorgonzola, mozzarella, cheddar, origano</div>
+        </div>
+        </div>
+        <div class="menu-row">
+            <div>15. Slavonska</div>
+            <div class="price">8,00€</div>
+            <div class="price">9,00€</div>
+            <div class="item-description">Umak od rajčice, sir, špek, kulen, feferoni, origano</div>
+        </div>
+        </div>
+        <div class="menu-row">
+            <div>16. Prosciutto</div>
+            <div class="price">8,50€</div>
+            <div class="price">9,50€</div>
+            <div class="item-description">Umak od rajčice, sir, pršut, rucola, maslinovo ulje, parmezan, origano</div>
+        </div>
+        </div>
+        <div class="menu-row">
+            <div>17. Pollo</div>
+            <div class="price">8,00€</div>
+            <div class="price">9,00€</div>
+            <div class="item-description">Umak od rajčice, sir, piletina, paprika, kukuruz, umak od kopra i senfa</div>
+        </div>
+        </div>
+        
 
-            <tr height="100">
-                <td width="487" valign="top">
-                    <p align="center">
-                        12. <strong>Aceto</strong>
-                    </p>
-                    <p align="center">
-                        Sir, češnjak, rukola, pršut, aceto crema,cherry
-                    </p>
-                </td>
-                <td width="68" valign="top">
-                    <p align="center">
-                        <strong>8,50€</strong>
-                    </p>
-                </td>
-                <td width="69" valign="top">
-                    <p align="center">
-                        <strong>9,50€</strong>
-                    </p>
-                </td>
+        <!-- Allergens -->
+        <div class="allergy-warning">
+            <strong>ALERGENI:</strong> Gluten, gljive, riba i riblji proizvodi, mlijeko i mliječni proizvodi, origano, pistaccio
+        </div>
+    </div>
 
-            </tr>
+    <!-- Dodaci -->
+    <div class="menu-section">
+        <h2>Dodaci</h2>
+        <div class="menu-item">
+            <div class="item-name">Feferoni/Masline/Umak od rajčice/Kiselo vrhnje</div>
+            <div class="item-price">1,00€</div>
+        </div>
+    </div>
 
-            <tr height="100">
-                <td width="487" valign="top">
-                    <p align="center">
-                        13. <strong>Picante</strong>
-                    </p>
-                    <p align="center">
-                        Umak od rajčice, sir ,šunka, gljive, špek,    feferoni,
-                        masline, origano
-                    </p>
-                </td>
-                <td width="68" valign="top">
-                    <p align="center">
-                        <strong>8,00€</strong>
-                    </p>
-                </td>
-                <td width="69" valign="top">
-                    <p align="center">
-                        <strong>9,00€</strong>
-                    </p>
-                </td>
+    <!-- Sendviči -->
+    <div class="menu-section">
+        <h2>Sendviči</h2>
+        <div class="menu-item">
+            <div class="item-name">Sir</div>
+            <div class="item-price">4,50€</div>
+            <div class="item-description">Sir + prilozi</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Sir/šunka</div>
+            <div class="item-price">5,00€</div>
+            <div class="item-description">Sir, šunka + prilozi</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Sir/kulen</div>
+            <div class="item-price">5,50€</div>
+            <div class="item-description">Sir, kulen + prilozi</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Sir/buđola</div>
+            <div class="item-price">5,50€</div>
+            <div class="item-description">Sir, buđola + prilozi</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Sir/pršut</div>
+            <div class="item-price">5,50€</div>
+            <div class="item-description">Sir, pršut + prilozi</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Sir/tuna</div>
+            <div class="item-price">5,00€</div>
+            <div class="item-description">Sir, tuna + prilozi</div>
+        </div>
+    </div>
 
-            </tr>
+    <!-- Drinks Sections -->
+    <div class="menu-section">
+        <h2>Topli napitci / Hot drinks</h2>
+        <div class="menu-item">
+            <div class="item-name">Kava</div>
+            <div class="price-container">
+                <div class="item-price">1,50€</div>
+            </div>
+            <div class="item-description">Šalica/Cup</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Kava s mlijekom</div>
+            <div class="price-container">
+                <div class="item-price">1,70€</div>
+            </div>
+            <div class="item-description">Šalica/Cup</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Kava sa šlagom</div>
+            <div class="price-container">
+                <div class="item-price">1,70€</div>
+            </div>
+            <div class="item-description">Šalica/Cup</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Bijela kava</div>
+            <div class="price-container">
+                <div class="item-price">2,00€</div>
+            </div>
+            <div class="item-description">Šalica/Cup</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Vruča čokolada</div>
+            <div class="price-container">
+                <div class="item-price">2,20€</div>
+            </div>
+            <div class="item-description">Šalica/Cup</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Capuccino</div>
+            <div class="price-container">
+                <div class="item-price">1,70€</div>
+            </div>
+            <div class="item-description">Šalica/Cup</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Nescafe</div>
+            <div class="price-container">
+                <div class="item-price">2,20€</div>
+            </div>
+            <div class="item-description">Šalica/Cup</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Kakao</div>
+            <div class="price-container">
+                <div class="item-price">2,20€</div>
+            </div>
+            <div class="item-description">Šalica/Cup</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Čaj</div>
+            <div class="price-container">
+                <div class="item-price">1,20€</div>
+            </div>
+            <div class="item-description">Šalica/Cup</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Čaj s medom i limunom</div>
+            <div class="price-container">
+                <div class="item-price">2,20€</div>
+            </div>
+            <div class="item-description">Šalica/Cup</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Mlijeko</div>
+            <div class="price-container">
+                <div class="item-price">0,40€</div>
+            </div>
+            <div class="item-description">0,1l</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Šlag</div>
+            <div class="price-container">
+                <div class="item-price">0,70€</div>
+            </div>
+            <div class="item-description">porcija</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Med</div>
+            <div class="price-container">
+                <div class="item-price">1,00€</div>
+            </div>
+            <div class="item-description">kom</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Kava+Cedevita</div>
+            <div class="price-container">
+                <div class="item-price">3,00€</div>
+            </div>
+            
+        </div>
+        
+        
+        
+        
+        
+        
+    </div>
 
-            <tr height="100">
-                <td width="487" valign="top">
-                    <p align="center">
-                        14. <strong>Quattro Formaggi</strong>
-                    </p>
-                    <p align="center">
-                        Umak od rajčice, gouda, gorgonzola, mozzarella,
-                        cheddar, origano
-                    </p>
-                </td>
-                <td width="68" valign="top">
-                    <p align="center">
-                        <strong>8,00€</strong>
-                    </p>
-                </td>
-                <td width="69" valign="top">
-                    <p align="center">
-                        <strong>9,00€</strong>
-                    </p>
-                </td>
+    
+    <div class="menu-section">
+        <h2>Pivo / Beer</h2>
+        <div class="menu-item">
+            <div class="item-name">Benediktiner točeno (0.3l)</div>
+            <div class="price-container">
+                <div class="item-price">2,00€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Benediktiner točeno (0.5l)</div>
+            <div class="price-container">
+                <div class="item-price">2,50€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Benediktiner pšenično (0.5l)</div>
+            <div class="price-container">
+                <div class="item-price">3,00€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Heineken (0.33l)</div>
+            <div class="price-container">
+                <div class="item-price">2,80€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Heineken 0,0% (0.33l)</div>
+            <div class="price-container">
+                <div class="item-price">2,80€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Ožujsko (0.5l)</div>
+            <div class="price-container">
+                <div class="item-price">2,50€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Karlovačko (0.5l)</div>
+            <div class="price-container">
+                <div class="item-price">2,50€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Karlovačko (0.33l)</div>
+            <div class="price-container">
+                <div class="item-price">2,20€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Tamno pivo (0.5l)</div>
+            <div class="price-container">
+                <div class="item-price">2,60€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Radler (0.5l)</div>
+            <div class="price-container">
+                <div class="item-price">2,50€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Pivski mudraci (0.5l)</div>
+            <div class="price-container">
+                <div class="item-price">3,70€</div>
+            </div>
+        </div>
+        
+    </div>
+    
+     <div class="menu-section">
+        <h2>Domaća alkoholna pića / Domestic spirits</h2>
+        <div class="menu-item">
+            <div class="item-name">Konjak, Stock, Pelinkovac (0.03l/0.05l)</div>
+            <div class="price-container">
+                <div class="item-price">1,20€/1,70€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Lavov, Amaro, Vodka, Medica (0.03l/0.05l)</div>
+            <div class="price-container">
+                <div class="item-price">1,20€/1,70€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Travarica (0.03l/0.05l)</div>
+            <div class="price-container">
+                <div class="item-price">1,20€/1,70€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Komovica (0.03l/0.05l)</div>
+            <div class="price-container">
+                <div class="item-price">1,20€/1,70€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Šljivovica (0.03l/0.05l)</div>
+            <div class="price-container">
+                <div class="item-price">1,20€/1,70€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Viljamovka (0.03l/0.05l)</div>
+            <div class="price-container">
+                <div class="item-price">2,00€/3,00€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Pelinkovac Antique (0.03l/0.05l)</div>
+            <div class="price-container">
+                <div class="item-price">1,40€/2,00€</div>
+            </div>
+        </div>
+        
+        
+    </div>
 
-            </tr>
+    <div class="menu-section">
+        <h2>Strana alkoholna pića / Foreign spirits</h2>
+        <div class="menu-item">
+            <div class="item-name">Gin (0.03l/0.05l)</div>
+            <div class="price-container">
+                <div class="item-price">2,20€/3,00€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Jagermeister (0.03l/0.05l)</div>
+            <div class="price-container">
+                <div class="item-price">2,00€/2,50€</div>
+            </div>
+        </div>
+        
+        
+    </div>
+    
+    <div class="menu-section">
+        <h2>Vino / Wine</h2>
+        <div class="menu-item">
+            <div class="item-name">Škrlet (0.1l)</div>
+            <div class="price-container">
+                <div class="item-price">1,30€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Škrlet (1l)</div>
+            <div class="price-container">
+                <div class="item-price">13,00€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Graševina (0.1l)</div>
+            <div class="price-container">
+                <div class="item-price">1,40€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Graševina (1l)</div>
+            <div class="price-container">
+                <div class="item-price">14,00€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Cabernet sauvignon (0.1l)</div>
+            <div class="price-container">
+                <div class="item-price">1,40€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Cabernet sauvignon (1l)</div>
+            <div class="price-container">
+                <div class="item-price">14,00€</div>
+            </div>
+        </div>
+        
+        
+    </div>
+    
+    
+    
+    <div class="menu-section">
+        <h2>Bezalkoholna pića / Non alcholic beverages</h2>
+        <div class="menu-item">
+            <div class="item-name">Coca Cola, Fanta, Sprite (0.33l)</div>
+            <div class="price-container">
+                <div class="item-price">2,50€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Coca Cola(0.1l)</div>
+            <div class="price-container">
+                <div class="item-price">0,70€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Schweppes(0.25l)</div>
+            <div class="price-container">
+                <div class="item-price">2,50€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Cocta(0.33l)</div>
+            <div class="price-container">
+                <div class="item-price">2,50€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Red bull(0.25l)</div>
+            <div class="price-container">
+                <div class="item-price">2,50€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Hydra(0.5l)</div>
+            <div class="price-container">
+                <div class="item-price">2,50€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Cedevita(vrečica)</div>
+            <div class="price-container">
+                <div class="item-price">2,00€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Ledeni čaj(0.33l)</div>
+            <div class="price-container">
+                <div class="item-price">2,40€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Prirodni sok(0.2l)</div>
+            <div class="price-container">
+                <div class="item-price">2,50€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Jana(0.33l)</div>
+            <div class="price-container">
+                <div class="item-price">1,60€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Jana(0.5l)</div>
+            <div class="price-container">
+                <div class="item-price">1,80€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Jamnica(0.1l)</div>
+            <div class="price-container">
+                <div class="item-price">0,50€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Jamnica(0.25l)</div>
+            <div class="price-container">
+                <div class="item-price">1,80€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Jamnica(0.33l)</div>
+            <div class="price-container">
+                <div class="item-price">2,00€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Jamnica(1l)</div>
+            <div class="price-container">
+                <div class="item-price">5,00€</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="item-name">Romerquelle(0.33l)</div>
+            <div class="price-container">
+                <div class="item-price">2,20€</div>
+            </div>
+        </div>
+        
+        
+        
+        
+    </div>
 
-            <tr height="100">
-                <td width="487" valign="top">
-                    <p align="center">
-                        15. <strong>Slavonska</strong>
-                    </p>
-                    <p align="center">
-                        Umak od rajčice, sir, špek, kulen, feferoni,    origano
-                    </p>
-                </td>
-                <td width="68" valign="top">
-                    <p align="center">
-                        <strong>8,00€</strong>
-                    </p>
-                </td>
-                <td width="69" valign="top">
-                    <p align="center">
-                        <strong>9,00€</strong>
-                    </p>
-                </td>
-
-            </tr>
-
-            <tr height="100">
-                <td width="487" valign="top">
-                    <p align="center">
-                        16. <strong>Prosciutto</strong>
-                    </p>
-                    <p align="center">
-                        Umak od rajčice, sir, pršut, rucola, maslinovo    ulje,
-                        parmezan, origano
-                    </p>
-                </td>
-                <td width="68" valign="top">
-                    <p align="center">
-                        <strong>8,50€</strong>
-                    </p>
-                </td>
-                <td width="69" valign="top">
-                    <p align="center">
-                        <strong>9,50€</strong>
-                    </p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-<p align="center">
-    Dodaci:  feferoni/masline/umak od rajčice/kiselo vrhnje 1,00€
-</p>
-<p align="center">
-    ALERGENI:  Gluten, gljive, riba i riblji prozvodi, mlijeko i mliječni
-    proizvodi, origano,  pistaccio
-</p>
-<p align="center">
-    <a href="http://www.pizzeria-volare.com/">www.pizzeria-volare.com</a>
-</p>
-<p align="center">
-    <strong>Wi-Fi lozinka:Volare1234</strong>
-</p>
-<p align="center">
-    <img
-        width="272"
-        height="243"
-        src="pizza.svg"
-    />
-</p>
-<p align="center">
-    <strong>Sendviči</strong>
-</p>
-<div align="center">
-    <table border="1" cellspacing="0" cellpadding="0">
-        <tbody>
-            <tr>
-                <td width="482" valign="top">
-                    <p align="center">
-                        <strong>Sir</strong>
-                    </p>
-                    <p align="center">
-                        Sir + prilozi
-                    </p>
-                </td>
-                <td width="94" valign="top">
-                    <p align="center">
-                        <strong>4,50€</strong>
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="482" valign="top">
-                    <p align="center">
-                        <strong>Sir / šunka</strong>
-                    </p>
-                    <p align="center">
-                        Sir, šunka + prilozi
-                    </p>
-                </td>
-                <td width="94" valign="top">
-                    <p align="center">
-                        <strong>5,00€</strong>
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="482" valign="top">
-                    <p align="center">
-                        <strong>Sir / kulen</strong>
-                    </p>
-                    <p align="center">
-                        Sir, kulen + prilozi
-                    </p>
-                </td>
-                <td width="94" valign="top">
-                    <p align="center">
-                        <strong>5,50€</strong>
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="482" valign="top">
-                    <p align="center">
-                        <strong>Sir / buđola</strong>
-                    </p>
-                    <p align="center">
-                        Sir, buđola + prilozi
-                    </p>
-                </td>
-                <td width="94" valign="top">
-                    <p align="center">
-                        <strong>5,50€</strong>
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="482" valign="top">
-                    <p align="center">
-                        <strong>Sir / pršut</strong>
-                    </p>
-                    <p align="center">
-                        Sir, pršut + prilozi
-                    </p>
-                </td>
-                <td width="94" valign="top">
-                    <p align="center">
-                        <strong>5,50€</strong>
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="482" valign="top">
-                    <p align="center">
-                        <strong>Sir / tuna</strong>
-                    </p>
-                    <p align="center">
-                        Sir, tuna + prilozi
-                    </p>
-                </td>
-                <td width="94" valign="top">
-                    <p align="center">
-                        <strong>5,00€</strong>
-                    </p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-<p align="center">
-    Prilozi: majoneza, ketchup, kukuruz, cherry  rajčica, kiseli krastavci,
-    feferoni, salata.
-</p>
-<br clear="all"/>
-<div align="center">
-    <table border="1" cellspacing="0" cellpadding="0" width="99%">
-        <tbody>
-            <tr>
-                <td width="66%" colspan="3">
-                    <p align="center">
-                        <a name="_Hlk184055303">
-                            <strong>Topli napitci / Hot drinks</strong>
-                        </a>
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Kava
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Šalica/Cup
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        1.50 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Kava s mlijekom
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Šalica/Cup
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        1.70 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Kava sa šlagom
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Šalica/Cup
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        1.70 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Kava bez kofeina
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Šalica/Cup
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        1.50 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Kava bez kofeina s    mlijekom
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Šalica/Cup
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        1.70 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Bijela kava
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Šalica/Cup
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        2.00 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Vruća čokolada
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Šalica/Cup
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        2.20 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Capuccino
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Šalica/Cup
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        1.70 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Nescafe
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Šalica/Cup
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        2.20 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Kakao
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Šalica/Cup
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        2.20 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Čaj
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Šalica/Cup
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        1.20 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Čaj s medom i    limunom
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Šalica/Cup
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        2.20 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Mlijeko
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.1 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.40 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Šlag
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        porcija
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.70 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Med
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        kom
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        <a name="_Hlk183688258">1.00 €</a>
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Kava+Cedevita
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        3.00 €
-                    </p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-<br clear="all"/>
-<div align="center">
-    <table border="1" cellspacing="0" cellpadding="0" width="99%">
-        <tbody>
-            <tr>
-                <td width="66%" colspan="3">
-                    <p align="center">
-                        <strong>Pivo / Beer</strong>
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Benediktiner točeno
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.3 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        2,00 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Benediktiner točeno
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.5 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        2.50 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Benediktiner pšenično
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0,5 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        3,00 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Heineken
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.33 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        2.80 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Heineken 0,0%
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0,33 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        2,80 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Ožujsko
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.5 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        2.50 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Karlovačko
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.5 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        2.50 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Karlovačko 0,33
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0,33l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        2.20 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Tamno pivo
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.5 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        2.60 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Radler
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.5 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        2.50 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Pivski mudraci
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0,5 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        3,70 €
-                    </p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-<br clear="all"/>
-<div align="center">
-    <table border="1" cellspacing="0" cellpadding="0" width="99%">
-        <tbody>
-            <tr>
-                <td width="66%" colspan="3">
-                    <p align="center">
-                        <strong>
-                            Domaća alkoholna pića / Domestic    spirits
-                        </strong>
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Konjak, Stock, Pelinkovac
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.03 l / 0.05 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        1.20 € / 1.70 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Lavov, Amaro, Vodka, Medica
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.03 l / 0.05 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        1.20 € / 1.70 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Travarica
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.03 l / 0.05 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        1.20 € / 1.70 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Komovica
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.03 l / 0.05
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        1.20 € / 1.70 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Šljivovica
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.03 l / 0.05
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        1.20 € / 1.70 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Viljamovka
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.03 l / 0.05 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        3.00 € / 4.00 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Pelinkovac Antique
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.03 l / 0.05 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        1.40 € / 2.00 €
-                    </p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-<div align="center">
-    <table border="1" cellspacing="0" cellpadding="0" width="99%">
-        <tbody>
-            <tr>
-                <td width="66%" colspan="3">
-                    <p align="center">
-                        <strong>
-                            Strana alkoholna pića /    Foreign spirits
-                        </strong>
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Gin
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.03 l / 0.05 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        2.20 € / 3.00 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Jagermeister
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.03 l / 0.05 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        2.00 € / 2.50 €
-                    </p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-<div align="center">
-    <table border="1" cellspacing="0" cellpadding="0" width="99%">
-        <tbody>
-            <tr>
-                <td width="66%" colspan="3">
-                    <p align="center">
-                        <strong>Vino / Wine</strong>
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Škrlet
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.1 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        1.30 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Škrlet
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        1 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        13.00 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Graševina
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.1 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        1.40 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Graševina
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        1 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        14.00 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Cabernet sauvignon
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.1 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        1.40 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Cabernet sauvignon
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        1 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        14.00 €
-                    </p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-<br clear="all"/>
-<div align="center">
-    <table border="1" cellspacing="0" cellpadding="0" width="99%">
-        <tbody>
-            <tr>
-                <td width="66%" colspan="3">
-                    <p align="center">
-                        <strong>
-                            Bezalkoholna pića /    Non-alcoholic beverages
-                        </strong>
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Coca Cola, Fanta, Sprite,
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.33 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        2.50 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Coca Cola
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.1 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.70 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Schweppes
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.25 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        2.50 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Cocta
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0,33 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        2,50 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Red bull
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0,25 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        2,50 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Hydra
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0,5 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        2,50 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Cedevita
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        vrečica
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        2.00 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Ledeni čaj
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.33 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        2.40 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Prirodni sok,
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.2 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        2.50 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Jana
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.33 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        1.60 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Jana 0,5
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0,5 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        1.80 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Jamnica
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.1 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.50 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Jamnica
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.25 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        1.80 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Jamnica
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        1 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        5.00 €
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        Sensation
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        0.25 l
-                    </p>
-                </td>
-                <td width="33%" valign="bottom">
-                    <p align="center">
-                        2.00 €
-                    </p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+</body>
+</html>
